@@ -1,0 +1,37 @@
+
+.nav-container{
+    width: 100%; 
+    margin:0;
+    padding:0;
+
+}
+.nav-container ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px; 
+}
+.menu, footer, .futa{
+    width: 80%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 3em;
+    width: 100%; 
+    background: rgb(105, 105, 105);
+}
+
+.futa{
+padding-top: .7em;
+}
+
+footer a, .futa span{
+    text-decoration: none;
+    color:#fff; 
+   }
+
+footer a:hover{
+    text-decoration: none;
+    color:rgb(223, 223, 223);
+}
