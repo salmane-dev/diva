@@ -13,20 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/work', function () {
-    return view('work');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
 
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/', 'HelloController@index');
+
+Route::get('/work', 'HelloController@work');
+
+Route::get('/about', 'HelloController@about');
+
+Route::get('/contact', 'HelloController@contact');
+
+Route::get('/services', 'HelloController@services');
 

@@ -10,6 +10,7 @@
             <ul class="nav p-4 ml-5">
                 <li><a href="\"class="m-3 ">Home</a></li>
                 <li><a href="\work"class="m-3">Work</a></li>
+                <li><a href="\services"class="m-3">Services</a></li>
                 <li><a href="\about"class="m-3">About</a></li>
                 <li><a href="\contact"class="m-3">Contact</a></li>
             </ul>

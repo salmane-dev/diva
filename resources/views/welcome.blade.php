@@ -16,7 +16,14 @@
     <body>
         @include('nav')
 
-         @yield('content')  
+<div class="container">
+<br>
+<br>
+        @yield('content')
+<br>
+<br>
+</div>
+
 
     <footer>
         @include('footer')
