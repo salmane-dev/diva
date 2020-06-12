@@ -18,12 +18,9 @@ class HelloController extends Controller
     } 
 
     public function services(){
-        $services = [
-            'service 1',
-            'service 2',
-            'service 3',
-            'service 4'
-        ];
+       
+        // grabing data from mysql
+        $services = \App\Service::all();
 
         return view('services', compact('services'));
     } 

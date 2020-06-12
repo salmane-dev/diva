@@ -7,7 +7,7 @@
 
         <ul>
         @forelse($services as $service)
-            <li>the {{ $service }}</li>
+            <li>the {{ $service->name }}</li>
         @empty
             <span>Nothing in here </span>
         @endforelse
