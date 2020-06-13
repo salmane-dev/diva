@@ -23,5 +23,7 @@ Route::get('/about', 'HelloController@about');
 
 Route::get('/contact', 'HelloController@contact');
 
-Route::get('/services', 'HelloController@services');
+Route::get('/service', 'ServiceController@index');
+
+Route::post('/service', 'ServiceController@store');
 

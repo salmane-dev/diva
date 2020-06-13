@@ -17,14 +17,6 @@ class HelloController extends Controller
         return view('about');
     } 
 
-    public function services(){
-       
-        // grabing data from mysql
-        $services = \App\Service::all();
-
-        return view('services', compact('services'));
-    } 
-
     public function work(){
          
         // grabing data from mysql
