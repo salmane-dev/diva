@@ -17,13 +17,7 @@ class HelloController extends Controller
         return view('about');
     } 
 
-    public function work(){
-         
-        // grabing data from mysql
-        $works = \App\Work::all();
-
-        return view('work', compact('works'));
-    }
+    
     public function contact(){
         
         return view('contact');

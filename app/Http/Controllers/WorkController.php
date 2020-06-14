@@ -7,17 +7,16 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 
-class ServiceController extends Controller
+class WorkController extends Controller
 {
+   
 
     public function index(){
-       
-        // grabing data from mysql 
-        $services = DB::table('Services')->latest()->get();
+      
+        $works = DB::table('Works')->latest()->get();
 
-        return view('service.index', compact('services'));
+        return view('work.index', compact('works'));
     } 
- 
     
     public function store(){
        
@@ -25,11 +24,12 @@ class ServiceController extends Controller
             'name' => 'required|min:3|max:55'
         ]);
 
-      $service = new \App\Service();
-      $service->name = request('name');
-      $service->save();
+      $Work = new \App\Work();
+      $Work->name = request('name');
+      $Work->type = request('name');
+      $Work->save();
 
       return redirect()->back();
     } 
-
+    
 }

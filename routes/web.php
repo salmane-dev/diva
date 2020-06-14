@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HelloController@index');
 
-Route::get('/work', 'HelloController@work');
+Route::get('/work', 'WorkController@index');
+
+Route::post('/work', 'WorkController@store');
 
 Route::get('/about', 'HelloController@about');
 
