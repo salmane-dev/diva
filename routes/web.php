@@ -17,9 +17,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HelloController@index');
 
+
+
 Route::get('/work', 'WorkController@index');
 
 Route::post('/work', 'WorkController@store');
+
+Route::get('/work/{workid}', 'WorkController@show');
+
+Route::get('/work/{work}/edit', 'WorkController@edit');
+
+Route::patch('/work/{work}', 'WorkController@update');
+
+Route::delete('/work/{work}', 'WorkController@destroy');
+
+
 
 Route::get('/about', 'HelloController@about');
 
